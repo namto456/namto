@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thiệp 20/10 — Cẩm tú cầu</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stage">
+
+    <!-- 1) FLOWER STAGE: use your image link -->
+    <div id="flowerStage" class="flower-stage">
+      <div class="flower-wrap" id="flowerWrap" aria-hidden="true">
+        <!-- Replace src with any image link you want; current uses link you provided -->
+        <img id="flowerImg" class="flower-img" alt="Cẩm tú cầu" src="https://cdn.tgdd.vn/Files/2021/11/04/1395600/hoa-cam-tu-cau-dac-diem-phan-loai-va-y-nghia-cua-loai-hoa-nay-202111040040491664.jpg">
+      </div>
+
+      <button id="openBtn" class="open-btn" aria-label="Mở thiệp">
+        💖 <span class="btn-text">Hãy click vào đây</span> 💖
+      </button>
+    </div>
+
+    <!-- 2) ENVELOPE STAGE -->
+    <div id="envelopeStage" class="envelope-stage hidden" aria-hidden="true">
+      <div class="envelope-wrap">
+        <div class="envelope-body" id="envelopeBody">
+          <div class="envelope-flap" id="envelopeFlap"></div>
+          <div class="envelope-inner"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3) LETTER STAGE -->
+    <div id="letterStage" class="letter-stage hidden" aria-hidden="true">
+      <!-- hearts behind the card -->
+      <div id="heartsBack" class="hearts-back" aria-hidden="true"></div>
+
+      <div class="card-wrap">
+        <div class="card" id="card">
+          <h1 class="card-title">Gửi bé yêu của anh 💌</h1>
+          <div id="cardText" class="card-text" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
